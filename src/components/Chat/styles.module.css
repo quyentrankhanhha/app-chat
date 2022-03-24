@@ -1,0 +1,43 @@
+.messages {
+  margin: 110px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  padding: 10px 10px 0 10px;
+  margin: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  align-items: center;
+}
+
+.sent {
+  background-color: #70a1ff;
+  color: white;
+  flex-direction: row-reverse;
+  text-align: end;
+  float: right;
+}
+
+.received {
+  border: 1px solid lightgray;
+  background-color: #fafafa;
+  float: left;
+}
+
+.dotSend {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 500px) {
+  .sent {
+    padding: 7px 7px 0 7px;
+  }
+  .received {
+    padding: 7px 7px 0 7px;
+  }
+}
