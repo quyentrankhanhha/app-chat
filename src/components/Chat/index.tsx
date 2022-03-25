@@ -38,7 +38,6 @@ const Chat = () => {
       )
     })
   }, [])
-  console.log(messages)
 
   async function deleteMessage(e: FormEvent<HTMLElement>) {
     e.preventDefault()
@@ -56,7 +55,7 @@ const Chat = () => {
     <div>
       <SignOut />
       <div className={styles.messages}>
-        {messages.map(({ text, photoURL, uid, msgId, links }) => (
+        {messages.map(({ text, photoURL, uid, msgId }) => (
           <div key={msgId}>
             <div
               className={uid === auth.currentUser?.uid ? styles.dotSend : ''}

@@ -7,9 +7,9 @@
 .message {
   display: flex;
   padding: 10px 10px 0 10px;
-  margin: 20px;
+  margin: 12px;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgb(164, 164, 164);
+  box-shadow: 0 0 8px rgb(164, 164, 164);
   align-items: center;
 }
 

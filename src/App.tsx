@@ -5,7 +5,7 @@ import Chat from './components/Chat'
 import SignIn from './components/SignIn'
 import { auth } from './firebase'
 
-function App() {
+const App = () => {
   const [user] = useAuthState(auth)
   return <>{user ? <Chat /> : <SignIn />}</>
 }
