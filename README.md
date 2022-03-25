@@ -1,6 +1,6 @@
 # React minimal chat UI Challenge
 
-This app uses Typescript, React and, Firebase to create a public forum chat app. Anyone can sign in with their google account and post a message on the chat and everyone else who accesses this can see the chats other people have posted.
+This app uses Typescript, React and, Firebase to create a public forum chat app. Anyone can sign in with their Google account and send a message on the app and everybody who accesses this app can see the messages of other people.
 
 ## Functions: 
 - Authentication
