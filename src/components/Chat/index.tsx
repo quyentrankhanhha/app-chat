@@ -19,7 +19,11 @@ import SendMessage from '../SendMessage'
 import SignOut from '../SignOut'
 import styles from './styles.module.css'
 
-const Chat = () => {
+type UserProps = {
+  [user: string]: any
+}
+
+const Chat = ({ user }: UserProps) => {
   const scroll = useRef<any>(null)
   const [messages, setMessages] = useState<DocumentData[]>([])
   const messagesRef = collection(db, 'messages')
@@ -53,7 +57,7 @@ const Chat = () => {
 
   return (
     <div>
-      <SignOut />
+      <SignOut user={user} />
       <div className={styles.messages}>
         {messages.map(({ text, photoURL, uid, msgId }) => (
           <div key={msgId}>

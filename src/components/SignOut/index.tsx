@@ -1,13 +1,34 @@
-import { Button } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { auth } from '../../firebase'
 import styles from './styles.module.css'
 
-const SignOut = () => {
+type UserProps = {
+  [user: string]: any
+}
+
+const SignOut = ({ user }: UserProps) => {
+  console.log(user)
   return (
-    <div className={styles.container}>
-      <Button onClick={() => auth.signOut()}>Sign Out</Button>
-    </div>
+    <Grid
+      container
+      direction='row'
+      justifyContent='space-between'
+      alignItems='center'
+      className={styles.container}
+    >
+      <Grid item>
+        <Typography variant='h4'>MiniChat</Typography>
+      </Grid>
+      <Grid item>
+        <Typography variant='h6'>{user?.displayName}</Typography>
+      </Grid>
+      <Grid item>
+        <Button className={styles.btn} onClick={() => auth.signOut()}>
+          Sign Out
+        </Button>
+      </Grid>
+    </Grid>
   )
 }
 

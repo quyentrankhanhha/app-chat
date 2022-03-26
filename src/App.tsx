@@ -7,7 +7,7 @@ import { auth } from './firebase'
 
 const App = () => {
   const [user] = useAuthState(auth)
-  return <>{user ? <Chat /> : <SignIn />}</>
+  return <>{user ? <Chat user={user} /> : <SignIn />}</>
 }
 
 export default App
