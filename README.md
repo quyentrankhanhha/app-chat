@@ -9,6 +9,18 @@ This app uses Typescript, React and, Firebase to create a public forum chat app.
 - A message can be deleted
 - Can not send a message without a character.
 
+## How to run the project?
+
+To start the Client side,
+
+- Clone the repository (https://github.com/quyentrankhanhha/solita-dev-academy)
+- Go to the folder, install and start with command
+
+```bash
+npm install
+npm start
+```
+
 ## TODO:
 - Generate URL preview if a message contains a link
 - Avoid white space when sending messages
